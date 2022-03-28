@@ -1,0 +1,30 @@
+nav ul li:first-child {
+  background-color: #2f2;
+}
+
+nav ul li:first-child:hover {
+  background-color: #1e1;
+}
+
+#mainArticle {
+  margin: 0 20px 20px 20px;
+  text-align: justify;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#mainArticle h2 {
+  width: 100%;
+}
+
+.mePhotos {
+  height: 200px;
+  border: #2f2 solid;
+  border-width: 2px;
+  text-align: center;
+}
+
+.mePhotos:hover {
+  height: 300px;
+}

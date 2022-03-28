@@ -1,0 +1,15 @@
+nav ul li:nth-child(2) {
+  background-color: #2f2;
+}
+
+nav ul li:nth-child(2):hover {
+  background-color: #1e1;
+}
+
+#cvIFrame {
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+}
