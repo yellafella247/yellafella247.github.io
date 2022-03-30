@@ -13,3 +13,25 @@ nav ul li:nth-child(2):hover {
   display: block;
   height: 100%;
 }
+
+#cvIframe #cvIframe #cvIframe ::-webkit-scrollbar {
+  width: 20px;
+}
+
+#cvIframe html ::-webkit-scrollbar-track {
+  background: #0a0;
+}
+
+/* Handle */
+#cvIframe html ::-webkit-scrollbar-thumb {
+  background: #1d1;
+}
+
+/* Handle on hover */
+#cvIframe html ::-webkit-scrollbar-thumb:hover {
+  background: #2f2;
+}
+
+footer {
+  display: block;
+}

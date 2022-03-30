@@ -11,7 +11,7 @@ nav ul li:first-child:hover {
   text-align: justify;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #mainArticle h2 {
@@ -19,12 +19,39 @@ nav ul li:first-child:hover {
 }
 
 .mePhotos {
-  height: 200px;
+  width: 45%;
+  height: fit-content;
   border: #2f2 solid;
   border-width: 2px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.mePhotos:hover {
-  height: 300px;
+#pic2, #pic3 {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+
+  #mainArticle h2 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  #mainArticle p {
+    font-size: 20px;
+  }
+
+  .mePhotos {
+    width: unset;
+    height: 200px;
+  }
+
+  #pic2, #pic3 {
+    display: block;
+  }
+
+  .mePhotos:hover {
+    height: 300px;
+  }
 }

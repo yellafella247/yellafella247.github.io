@@ -1,16 +1,17 @@
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: url('../images/CompScreen.jpg'), #000;
-  background-position: 50% 0%;
+  background-color: #000;
+  background-size: 250%;
+  background-position: 43.5% 0%;
   background-repeat: no-repeat;
   position: relative;
-  top: 18vh;
-  margin: 0 auto;
-  max-width: 950px;
+  top: 10vh;
+  width: 56vw;
+  margin: 0 22vw;
+  max-width: 400px;
   height: 700px;
 }
 
@@ -20,6 +21,7 @@ body {
   border-color: #2f2;
   border-width: 10px;
   border-style: solid;
+  border-radius: 15px;
   height: 100%;
   width: 100%;
   color: #2f2;
@@ -29,7 +31,8 @@ body {
 h1 {
   margin: 0;
   padding: 0;
-  width: max-content;
+  width: 100%;
+  max-width: max-content;
   height: max-content;
   background-color: #000;
 }
@@ -50,18 +53,23 @@ h1 {
 }
 
 nav {
+  display: flex;
   border-style: solid;
   border-width: 0 0 0 0;
   background-color: #0a0;
   color: black;
   height: 5%;
+  align-items: center;
 }
+
+nav span {}
 
 nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  overflow: auto;
   height: 100%;
 }
 
@@ -82,25 +90,11 @@ nav ul li a {
   color: #000;
 }
 
-#mainSection {
+main {
   overflow: scroll;
   overflow-x: hidden;
   height: 80%;
   /*padding-right: 20px;*/
-}
-
-#mainSection::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-#mainSection::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-#mainSection::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 footer {
@@ -125,3 +119,63 @@ footer p {
   background-color: #000;
   margin: 0;
 }
+
+@media (max-width: 1000px) {
+  body{
+    font-size: calc(2vw + 5px);
+  }
+
+  h1 {
+    font-size: calc(3vw + 5px);
+  }
+}
+
+/* @media (min-width: 768px) {
+  body {
+    width: unset;
+    background-image: url('../images/CompScreen.jpg');
+    background-color: #000;
+    background-size: unset;
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 950px;
+    height: 700px;
+  }
+
+  body ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  body ::-webkit-scrollbar-track {
+    background: #0a0;
+  }
+
+  body ::-webkit-scrollbar-thumb {
+    background: #1d1;
+  }
+
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #2f2;
+  }
+
+  #compScreen {
+    position: relative;
+    background: #000;
+    border-color: #2f2;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: unset;
+    height: 100%;
+    width: 100%;
+    color: #2f2;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  nav span {
+    display: none;
+  }
+} */
